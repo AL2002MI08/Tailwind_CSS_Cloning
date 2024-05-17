@@ -48,28 +48,29 @@
         <header class="sticky top-0 z-10">
             <!-- second navbar -->
             <nav class="w-full bg-[#d5d5d5] ">
-                <div class="flex justify-around items-center gap-7">
-                    <span >
+                <div class="flex justify-between sm:justify-around items-center gap-2 sm:gap-7 px-4 sm:px-0 py-2">
+                    <span>
                         <i class="fa-solid fa-bars"></i>
                     </span>
-                    <img class="w-[300px] h-[150px]" src="images/logoo.svg" alt="">
-                    <span class="sm:hidden"><svg xmlns="http://www.w3.org/2000/svg" height="1.2em" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                        <style type="text/css">
-                            .st0{fill:none;}
-                        </style>
-                        <rect x="192" y="240" width="128" height="32"></rect>
-                        <rect x="192" y="80" width="128" height="32"></rect>
-                        <rect x="192" y="400" width="128" height="32"></rect>
-                        <rect class="st0" width="512" height="512"></rect>
-                        </svg></span>
-                    <ul class="px-2 mt-14 hidden sm:flex justify-around font-bold gap-8">
+                    <img class="w-[150px] sm:w-[300px] h-auto" src="images/logoo.svg" alt="University Logo">
+                    <span class="sm:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                            <style type="text/css">
+                                .st0{fill:none;}
+                            </style>
+                            <rect x="192" y="240" width="128" height="32"></rect>
+                            <rect x="192" y="80" width="128" height="32"></rect>
+                            <rect x="192" y="400" width="128" height="32"></rect>
+                            <rect class="st0" width="512" height="512"></rect>
+                        </svg>
+                    </span>
+                    <ul class="hidden sm:flex justify-around font-bold gap-4 sm:gap-8">
                         <li><a class="hover:underline" href="#">STUDY</a></li>
                         <li><a class="hover:underline" href="#">RESEARCH</a></li>
                         <li><a class="hover:underline" href="#">INNOVATE</a></li>
                         <li><a class="hover:underline" href="#">EXPLORE</a></li>
-                        
                     </ul>
-                    <span class="sm:flex hidden items-center font-light gap-4 underline hover:cursor-pointer">
+                    <span class="hidden sm:flex items-center font-light gap-4 underline hover:cursor-pointer">
                         <p>Search</p>
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </span>
@@ -77,52 +78,36 @@
             </nav>
         </header>
         <!-- section 1 -->
-        <div>
-            <div class="">
-                <img src="https://www.up.pt/portal/media/images/ijup-2024_12.format-jpeg.jpg"
-                    class="w-full h-[100vh] object-center object-cover" alt="">
-                <div
-                    class="absolute -bottom-10 left-20 text-white border-2 border-black px-8 bg-[#323532] bg-opacity-90 py-6 mx-auto w-[33%] h-[33%]">
-                    <h2 class="text-2xl font-bold py-3">IJUP 2024: New talents in science reveal themselves at U.Porto
-                    </h2>
-                    <a href="#">
-                        <p class="py-4">
-                            More than 1,000 students are taking part in the 17th U.Porto Youth Research Meeting from 8
-                            to 10
-                            May.
-                        </p>
-                    </a>
-                    <button class="bg-yellow-800 font-bold py-1 px-2 text-black">See More</button>
-                </div>
+        <div class="relative">
+            <img src="https://www.up.pt/portal/media/images/ijup-2024_12.format-jpeg.jpg" class="w-full h-[50vh] sm:h-[100vh] object-center object-cover" alt="University Event">
+            <div class="absolute bottom-10 left-4 sm:left-20 text-white border-2 border-black px-4 sm:px-8 bg-[#323532] bg-opacity-90 py-4 sm:py-6 w-11/12 sm:w-[33%]">
+                <h2 class="text-xl sm:text-2xl font-bold py-3">IJUP 2024: New talents in science reveal themselves at U.Porto</h2>
+                <a href="#">
+                    <p class="py-4">More than 1,000 students are taking part in the 17th U.Porto Youth Research Meeting from 8 to 10 May.</p>
+                </a>
+                <button class="bg-yellow-800 font-bold py-1 px-2 text-black">See More</button>
             </div>
         </div>
         <!-- section 2 -->
-        <section class="container w-11/12 mx-auto px-12 py-16">
-            <h1 class="text-7xl text-yellow-700">Study</h1>
-            <div class="flex  justify-between pt-14">
-                <h1 class="text-3xl font-semibold">Your future is here!</h1>
-                <p class="w-[65%] text-gray-500 text-xl">Gathering the most complete offer of training programmes in
-                    Portugal, the 14 faculties of the U.Porto offer unique conditions to those who want to build an
-                    academic
-                    path of excellence and properly valued by the labour market.</p>
+        <section class="container w-11/12 mx-auto px-4 sm:px-12 py-16">
+            <h1 class="text-5xl sm:text-7xl text-yellow-700">Study</h1>
+            <div class="flex flex-col sm:flex-row justify-between pt-14">
+                <h1 class="text-2xl sm:text-3xl font-semibold">Your future is here!</h1>
+                <p class="sm:w-[65%] text-gray-500 text-xl">Gathering the most complete offer of training programmes in Portugal, the 14 faculties of the U.Porto offer unique conditions to those who want to build an academic path of excellence and properly valued by the labour market.</p>
             </div>
             <div class="pt-8">
                 <h1 class="text-2xl font-semibold">Which course are you looking for?</h1>
             </div>
-            <div class="pb-11 grid grid-cols-2 gap-40">
-                <div class="w-[125%]">
+            <div class="pb-11 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-40">
+                <div>
                     <form action="" class="flex flex-col">
-                        <select name="course" id="course-select"
-                            class="py-3 pl-4 font-semibold  border-gray-800 border-2 my-3">
+                        <select name="course" id="course-select" class="py-3 pl-4 font-semibold border-gray-800 border-2 my-3">
                             <option value="">All</option>
-                            <option value="dog">Bachelor's and Integrated Master's Degrees
-                            </option>
+                            <option value="dog">Bachelor's and Integrated Master's Degrees</option>
                             <option value="cat">Master's Degrees</option>
                             <option value="">Doctorates</option>
                         </select>
-                        <input type="text" placeholder="Please enter your course keywords..."
-                            class="py-3 pl-4 font-semibold border-gray-800 border-2 my-3">
-
+                        <input type="text" placeholder="Please enter your course keywords..." class="py-3 pl-4 font-semibold border-gray-800 border-2 my-3">
                     </form>
                     <button class="bg-yellow-800 w-full h-11 text-white text-2xl font-semibold">Search</button>
                 </div>
